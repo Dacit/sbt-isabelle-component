@@ -11,6 +11,6 @@ MWE for an `sbt` setup of an external Isabelle component.
 2. Configure Isabelle to use our component:
    - Add component to your Isabelle user settings:
      ```
-     echo "init_component \"$(pwd)/my-component/scala-2.12\"" >> ~/.isabelle/etc/settings
+     echo "init_component \"$(pwd)/target/my-component/scala-2.12\"" >> ~/.isabelle/etc/settings
      ```
 3. Run via tool: `./sbt "project my-component" run`
